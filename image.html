@@ -1,6 +1,7 @@
-<html translate="no" lang=”ja”>
+<html lang="ja">
   <head>
     <title>用尺計算</title>
+    <meta http-equiv="content-language" content="ja">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <script src="image.js"></script>
@@ -17,10 +18,30 @@
   </head>
 
   <body>
-    <a href="index.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
-      <p uk-icon="icon: home; ratio: 1"></p>
-      <p class="uk-margin uk-margin-top">TOP</p>
-    </a>
+    <div class="uk-flex flex-space-between">
+      <a href="index.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
+        <p uk-icon="icon: home; ratio: 1"></p>
+        <p class="uk-margin uk-margin-top">TOP</p>
+      </a>
+      <div class="uk-text-center" onclick="question()">
+          <a class="uk-margin-small-right" uk-icon="icon: question; ratio: 1"></a>
+      </div>
+    </div>
+    <div id="howTo" class="uk-card uk-card-default uk-card-body"
+    style="display:none;">
+      <p class="uk-margin-remove">
+        ①巾：生地の巾をcm単位で入力する。<br>
+        ②色選択：生地の色を選択する。<br>
+        ③色選択横のプラスのアイコンを押下する。<br>
+        ④画面下部に指定幅の生地見本が生成される。<br>
+        ⑤生地を使用する型紙の縦、横をそれぞれcm単位で入力する。<br>
+        ⑥memoに生地の用途を記入する。<br>
+        ⑦memo横のプラスアイ紺を押下する。<br>
+        ⑧指定サイズの型紙見本が生成される。<br>
+        ⑨[⑧]を指で移動させ、適切な配置を探す。<br>
+        ⑩[⑧]をタップすればmemoが表示され、枠外をタップで非表示に戻る。
+      </p>
+    </div>
     <div
       class="uk-container uk-margin uk-margin-large-top"
       style="vertical-align: middle">
