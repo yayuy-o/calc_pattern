@@ -1,0 +1,66 @@
+<html translate="no" lang=”ja”>
+  <head>
+    <title>サーキュラースカート計算</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="skirt.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="init.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <a href="home.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
+      <p uk-icon="icon: home; ratio: 1"></p>
+      <p class="uk-margin uk-margin-top">TOP</p>
+    </a>
+    <div
+      class="uk-container uk-margin uk-margin-large-top"
+      style="vertical-align: middle">
+      <div class="uk-margin uk-text-center">
+        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+          <p class="uk-text-default">ウエスト</p>
+          <input
+          id="pattern-waist"
+          type="number"
+          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+          placeholder="waist"
+          />
+          <p class="uk-text-default">cm</p>
+        </div>
+        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+          <p class="uk-text-default">角度</p>
+          <input
+          id="pattern-angle"
+          type="number"
+          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+          placeholder="angle"
+          />
+          <p class="uk-text-default">度</p>
+        </div>
+      </div>
+      <div class="uk-margin uk-text-center">
+        <button class="uk-button uk-button-primary uk-button-large" id="btn-calc"
+          onclick="calcRadius()">
+          計算
+        </button>
+        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+          <p class="uk-text-default">内円の半径</p>
+          <p
+          id="pattern-radius"
+          type="number"
+          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+          placeholder="radius"
+          >
+          <p class="uk-text-default">cm</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
