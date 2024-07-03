@@ -60,3 +60,14 @@
 #btn-calc {
   width: 80%;
 }
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+#howTo {
+  position: absolute;
+  z-index: 99;
+  width: 90%;
+  left: 5%;
+}
