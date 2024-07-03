@@ -1,0 +1,108 @@
+<html translate="no" lang=”ja”>
+  <head>
+    <title>用尺計算</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="image.js"></script>
+    <script src="cmanObjMove_v091.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="init.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <a href="home.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
+      <p uk-icon="icon: home; ratio: 1"></p>
+      <p class="uk-margin uk-margin-top">TOP</p>
+    </a>
+    <div
+      class="uk-container uk-margin uk-margin-large-top"
+      style="vertical-align: middle">
+      <div class="uk-flex uk-flex-around uk-margin uk-text-center">
+        <span class="uk-margin-auto uk-margin-auto-vertical style-ruby"
+          ><p class="uk-text-default">巾</p>
+          <input
+            id="cloth-width"
+            type="number"
+            class="uk-input uk-form-width-small"
+          />
+          <p class="uk-text-default">cm</p></span
+        >
+        <input
+          id="cloth-color"
+          type="color"
+          class="uk-input uk-form-width-xsmall"
+        />
+        <a
+          href="#"
+          uk-icon="plus-circle"
+          onclick="addCloth()"
+          id="btn-cloth-plus"
+          class="uk-margin-auto uk-margin-auto-vertical"
+          style="min-width: 20px"
+        ></a>
+      </div>
+      <div class="uk-margin uk-text-center">
+        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+          <p class="uk-text-default">縦</p>
+          <input
+          id="pattern-height"
+          type="number"
+          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+          placeholder="height"
+          />
+          <p class="uk-text-default">cm</p>
+        </div>
+        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+          <p class="uk-text-default">横</p>
+          <input
+          id="pattern-width"
+          type="number"
+          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+          placeholder="width"
+          />
+          <p class="uk-text-default">cm</p>
+        </div>
+      </div>
+      <div class="uk-flex uk-flex-around uk-margin uk-text-center">
+        <input
+          id="pattern-memo"
+          type="text"
+          class="uk-input uk-form-width-medium uk-margin-auto uk-margin-remove-right"
+          placeholder="memo"
+        />
+        <a
+          href="#"
+          uk-icon="plus-circle"
+          onclick="addPattern()"
+          id="btn-pattern-plus"
+          class="uk-margin-auto uk-margin-auto-vertical"
+          style="min-width: 20px"
+        ></a>
+      </div>
+    </div>
+    <div
+      id="cloth"
+      class="uk-container uk-container-expand uk-padding-remove areadiv"
+      style="width: 80%"
+      cmanOMat="area"
+    >
+      <!-- <div
+        id="graph"
+        class="uk-container uk-container-expand uk-padding-remove"
+      ></div> -->
+      <div
+        id="p-sample"
+        class="pattern"
+        cmanOMat="movearea"
+        style="position: absolute; margin: 0px; cursor: pointer"
+      ></div>
+    </div>
+  </body>
+</html>
