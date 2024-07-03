@@ -55,3 +55,13 @@ function addTransition(newPattern, newPMemo) {
   tranP.textContent = newPMemo;
   tranDiv.appendChild(tranP);
 }
+
+function question() {
+  const howTo = document.getElementById("howTo");
+
+  if(howTo.style.display === "none"){
+    howTo.style.display = "block";
+  } else {
+    howTo.style.display = "none";
+  }
+}
