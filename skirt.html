@@ -1,6 +1,7 @@
-<html translate="no" lang=”ja”>
+<html lang=”ja”>
   <head>
     <title>サーキュラースカート計算</title>
+    <meta http-equiv="content-language" content="ja">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <script src="skirt.js"></script>
@@ -16,10 +17,12 @@
   </head>
 
   <body>
-    <a href="index.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
-      <p uk-icon="icon: home; ratio: 1"></p>
-      <p class="uk-margin uk-margin-top">TOP</p>
-    </a>
+    <div class="uk-flex">
+      <a href="index.html" class="uk-flex uk-link-heading uk-text-center uk-margin-top uk-margin-left">
+        <p uk-icon="icon: home; ratio: 1"></p>
+        <p class="uk-margin uk-margin-top">TOP</p>
+      </a>
+    </div>
     <div
       class="uk-container uk-margin uk-margin-large-top"
       style="vertical-align: middle">
@@ -50,16 +53,19 @@
           onclick="calcRadius()">
           計算
         </button>
-        <div class="uk-flex-around uk-margin uk-text-center ruby-text">
-          <p class="uk-text-default">内円の半径</p>
-          <p
-          id="pattern-radius"
-          type="number"
-          class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
-          placeholder="radius"
-          >
-          <p class="uk-text-default">cm</p>
-        </div>
+      </div>
+      <div class="uk-flex-around uk-margin uk-text-center ruby-text">
+        <p class="uk-text-default">内円の半径</p>
+        <p
+        id="pattern-radius"
+        type="number"
+        class="uk-input uk-form-width-small uk-margin-auto uk-margin-remove-left uk-margin-remove-right"
+        placeholder="radius"
+        >
+        <p class="uk-text-default">cm</p>
+      </div>
+      <div class="uk-margin uk-margin-large-top uk-text-center">
+        <img src="fan-shape.png">
       </div>
     </div>
   </body>
